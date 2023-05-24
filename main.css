@@ -1,0 +1,72 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#videos{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+
+.video-player{
+
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#user-2{
+
+    display: none;
+}
+
+.smallFrame{
+
+    position : fixed;
+    top : 20px;
+    left: 20px;
+    height: 170px;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid #b366f9;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    /* box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px; */
+}
+
+
+#controls{
+    position: fixed;
+    bottom:20px;
+    left :50%;
+    transform: translate(-50%);
+    display: flex;
+    gap: 1em;
+
+}
+.control-container{
+
+    background-color: rgb(179,102,249,.9);
+    padding : 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.control-container img{
+
+    height:30px;
+    width:30px;
+}
+#leave-btn{
+    background-color: rgb(255,80,80,1);
+}
